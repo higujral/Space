@@ -1,0 +1,10 @@
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModelClasses\bin\Debug\SpaceDataModelClasses.dll
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModelClasses\bin\Debug\SpaceDataModelClasses.pdb
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModelClasses\obj\Debug\SpaceDataModelClasses.dll
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModelClasses\obj\Debug\SpaceDataModelClasses.pdb
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModelClasses\bin\Debug\SpaceDataModelClasses.dll.config
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModelClasses\bin\Debug\EntityFramework.dll
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModelClasses\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModelClasses\bin\Debug\EntityFramework.xml
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModelClasses\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModelClasses\obj\Debug\SpaceDataModelClasses.csprojResolveAssemblyReference.cache

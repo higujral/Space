@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "SpaceWebAPI"
+  },
+  "hostingPlanName": {
+    "value": "HiteshGujralAppService"
+  },
+  "siteLocation": {
+    "value": "East US"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "6a62b17c-8a38-439f-a1c6-d4f2ef758737"
+  },
+  "resourceGroup": {
+    "value": "Dev"
+  }
+}

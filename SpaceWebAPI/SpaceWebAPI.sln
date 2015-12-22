@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceWebAPI", "SpaceWebAPI\SpaceWebAPI.csproj", "{CC9D5871-83AF-472D-872C-111327D38EDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{B5D9A2EC-817B-4277-A9B8-C92D314A6335}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{B2337C35-8F56-4526-8CE1-CD5248A7F4A9}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{B183E1F4-1FBB-484E-A66D-4E357A24450F}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\SpaceWebAPI.json = PublishScripts\Templates\SpaceWebAPI.json
+		PublishScripts\Templates\SpaceWebAPI.param.dev.json = PublishScripts\Templates\SpaceWebAPI.param.dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceDataModel", "SpaceDataModel\SpaceDataModel.csproj", "{A967AED2-CDBD-403E-A5A8-A9880B88DF2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceDataModelClasses", "SpaceDataModelClasses\SpaceDataModelClasses.csproj", "{F690EDA8-6817-4BCD-AEA3-1B75B8982048}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "space", "space\space.sqlproj", "{93C495AD-DA57-4B33-BEB7-3B0A09B4571B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC9D5871-83AF-472D-872C-111327D38EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC9D5871-83AF-472D-872C-111327D38EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC9D5871-83AF-472D-872C-111327D38EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC9D5871-83AF-472D-872C-111327D38EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A967AED2-CDBD-403E-A5A8-A9880B88DF2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A967AED2-CDBD-403E-A5A8-A9880B88DF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A967AED2-CDBD-403E-A5A8-A9880B88DF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A967AED2-CDBD-403E-A5A8-A9880B88DF2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F690EDA8-6817-4BCD-AEA3-1B75B8982048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F690EDA8-6817-4BCD-AEA3-1B75B8982048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F690EDA8-6817-4BCD-AEA3-1B75B8982048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F690EDA8-6817-4BCD-AEA3-1B75B8982048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93C495AD-DA57-4B33-BEB7-3B0A09B4571B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93C495AD-DA57-4B33-BEB7-3B0A09B4571B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93C495AD-DA57-4B33-BEB7-3B0A09B4571B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{93C495AD-DA57-4B33-BEB7-3B0A09B4571B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93C495AD-DA57-4B33-BEB7-3B0A09B4571B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93C495AD-DA57-4B33-BEB7-3B0A09B4571B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2337C35-8F56-4526-8CE1-CD5248A7F4A9} = {B5D9A2EC-817B-4277-A9B8-C92D314A6335}
+		{B183E1F4-1FBB-484E-A66D-4E357A24450F} = {B5D9A2EC-817B-4277-A9B8-C92D314A6335}
+	EndGlobalSection
+EndGlobal

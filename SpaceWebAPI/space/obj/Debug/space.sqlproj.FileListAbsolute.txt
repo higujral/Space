@@ -1,0 +1,9 @@
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\space\bin\Debug\space.dacpac
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\space\bin\Debug\space.dll
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\space\bin\Debug\space.pdb
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\space\obj\Debug\space.dll
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\space\obj\Debug\space.pdb
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\space\obj\Debug\Model.xml
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\space\obj\Debug\refactor.xml
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\space\obj\Debug\postdeploy.sql
+C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\space\obj\Debug\predeploy.sql
