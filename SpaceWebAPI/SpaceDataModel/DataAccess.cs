@@ -72,7 +72,11 @@ namespace SpaceDataModel
             List<Story> stories = null;
             using (var context = new SpaceDBContext())
             {
-                stories = context.Stories.ToList();
+                stories = context.Stories
+                            .Include(s => s.StoryType)
+                            .Include(s => s.Topics.Select(t => t.SubTopics))                            
+                            .Include(s => s.StoryFeedbacks)
+                            .ToList();
             }
             return stories;
         }
@@ -82,7 +86,17 @@ namespace SpaceDataModel
             List<Story> stories = null;
             using (var context = new SpaceDBContext())
             {
-                stories = context.Stories.Where(n => n.StoryType == storyType).ToList();
+                stories = context.Stories.Where(n => n.StoryType.ID == storyType.ID).ToList();
+            }
+            return stories;
+        }
+
+        public List<Story> GetStoriesForTopics(List<Topic> topics)
+        {
+            List<Story> stories = null;
+            using (var context = new SpaceDBContext())
+            {
+                stories = context.Stories.Where(s => s.Topics.Select(t1 => t1.ID).Intersect(topics.Select(t2 => t2.ID)).Any()).ToList();
             }
             return stories;
         }
@@ -92,7 +106,9 @@ namespace SpaceDataModel
             List<Topic> topics = null;
             using (var context = new SpaceDBContext())
             {
-                topics = context.Topics.ToList();
+                topics = context.Topics
+                        .Include(t => t.SubTopics)
+                        .ToList();
             }
             return topics;
         }

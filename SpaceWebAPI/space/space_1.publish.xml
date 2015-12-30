@@ -4,7 +4,7 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>space</TargetDatabaseName>
     <DeployScriptFileName>space.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source=space.database.windows.net;User ID=higujral;Pooling=False</TargetConnectionString>
+    <TargetConnectionString>Data Source=space.database.windows.net,1433;User ID=higujral;Pooling=False</TargetConnectionString>
     <ProfileVersionNumber>1</ProfileVersionNumber>
   </PropertyGroup>
 </Project>

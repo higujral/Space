@@ -25,6 +25,25 @@ namespace SpaceWebAPI.Controllers
             return _repo.GetStoryTypes();
         }
 
+        //Get Topics
+        public List<Topic> GetTopics()
+        {
+            return _repo.GetTopics();
+        }
+
+
+        //GET Stories for input story type
+        public List<Story> GetStoriesForType(StoryType storyType)
+        {
+            return _repo.GetStoriesForType(storyType);
+        }
+
+        //GET Stories for input topics
+        public List<Story> GetStoriesForTopics(List<Topic> topics)
+        {
+            return _repo.GetStoriesForTopics(topics);
+        }
+
         // Test GET api/values/5
         public string Get(int id)
         {
