@@ -7,13 +7,13 @@ namespace SpaceDataModel.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddedTopicIDFKInStory : IMigrationMetadata
+    public sealed partial class Initial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedTopicIDFKInStory));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
         
         string IMigrationMetadata.Id
         {
-            get { return "201512131218591_AddedTopicIDFKInStory"; }
+            get { return "201601061213169_Initial"; }
         }
         
         string IMigrationMetadata.Source

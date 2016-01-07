@@ -3,7 +3,7 @@ namespace SpaceDataModel.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class SpaceDBCreation : DbMigration
+    public partial class Initial : DbMigration
     {
         public override void Up()
         {
@@ -12,13 +12,15 @@ namespace SpaceDataModel.Migrations
                 c => new
                     {
                         ID = c.Int(nullable: false, identity: true),
-                        Header = c.String(),
+                        Title = c.String(nullable: false),
                         Content = c.String(),
-                        StoryType_ID = c.Int(),
+                        DateCreated = c.DateTime(nullable: false),
+                        DateLastModified = c.DateTime(nullable: false),
+                        StoryTypeID = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.StoryTypes", t => t.StoryType_ID)
-                .Index(t => t.StoryType_ID);
+                .ForeignKey("dbo.StoryTypes", t => t.StoryTypeID, cascadeDelete: true)
+                .Index(t => t.StoryTypeID);
             
             CreateTable(
                 "dbo.StoryFeedbacks",
@@ -28,6 +30,8 @@ namespace SpaceDataModel.Migrations
                         StoryID = c.Int(nullable: false),
                         Rating = c.Int(nullable: false),
                         Comment = c.String(),
+                        DateCreated = c.DateTime(nullable: false),
+                        DateLastModified = c.DateTime(nullable: false),
                     })
                 .PrimaryKey(t => t.ID)
                 .ForeignKey("dbo.Stories", t => t.StoryID, cascadeDelete: true)
@@ -43,48 +47,58 @@ namespace SpaceDataModel.Migrations
                 .PrimaryKey(t => t.ID);
             
             CreateTable(
+                "dbo.Topics",
+                c => new
+                    {
+                        ID = c.Int(nullable: false, identity: true),
+                        Name = c.String(maxLength: 450),
+                    })
+                .PrimaryKey(t => t.ID)
+                .Index(t => t.Name, unique: true, name: "UniqueIndex");
+            
+            CreateTable(
                 "dbo.SubTopics",
                 c => new
                     {
                         ID = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                         TopicID = c.Int(nullable: false),
-                        Story_ID = c.Int(),
                     })
                 .PrimaryKey(t => t.ID)
                 .ForeignKey("dbo.Topics", t => t.TopicID, cascadeDelete: true)
-                .ForeignKey("dbo.Stories", t => t.Story_ID)
-                .Index(t => t.TopicID)
-                .Index(t => t.Story_ID);
+                .Index(t => t.TopicID);
             
             CreateTable(
-                "dbo.Topics",
+                "dbo.TopicStories",
                 c => new
                     {
-                        ID = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        Story_ID = c.Int(),
+                        Topic_ID = c.Int(nullable: false),
+                        Story_ID = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.Stories", t => t.Story_ID)
+                .PrimaryKey(t => new { t.Topic_ID, t.Story_ID })
+                .ForeignKey("dbo.Topics", t => t.Topic_ID, cascadeDelete: true)
+                .ForeignKey("dbo.Stories", t => t.Story_ID, cascadeDelete: true)
+                .Index(t => t.Topic_ID)
                 .Index(t => t.Story_ID);
             
         }
         
         public override void Down()
         {
-            DropForeignKey("dbo.Topics", "Story_ID", "dbo.Stories");
-            DropForeignKey("dbo.SubTopics", "Story_ID", "dbo.Stories");
             DropForeignKey("dbo.SubTopics", "TopicID", "dbo.Topics");
-            DropForeignKey("dbo.Stories", "StoryType_ID", "dbo.StoryTypes");
+            DropForeignKey("dbo.TopicStories", "Story_ID", "dbo.Stories");
+            DropForeignKey("dbo.TopicStories", "Topic_ID", "dbo.Topics");
+            DropForeignKey("dbo.Stories", "StoryTypeID", "dbo.StoryTypes");
             DropForeignKey("dbo.StoryFeedbacks", "StoryID", "dbo.Stories");
-            DropIndex("dbo.Topics", new[] { "Story_ID" });
-            DropIndex("dbo.SubTopics", new[] { "Story_ID" });
+            DropIndex("dbo.TopicStories", new[] { "Story_ID" });
+            DropIndex("dbo.TopicStories", new[] { "Topic_ID" });
             DropIndex("dbo.SubTopics", new[] { "TopicID" });
+            DropIndex("dbo.Topics", "UniqueIndex");
             DropIndex("dbo.StoryFeedbacks", new[] { "StoryID" });
-            DropIndex("dbo.Stories", new[] { "StoryType_ID" });
-            DropTable("dbo.Topics");
+            DropIndex("dbo.Stories", new[] { "StoryTypeID" });
+            DropTable("dbo.TopicStories");
             DropTable("dbo.SubTopics");
+            DropTable("dbo.Topics");
             DropTable("dbo.StoryTypes");
             DropTable("dbo.StoryFeedbacks");
             DropTable("dbo.Stories");

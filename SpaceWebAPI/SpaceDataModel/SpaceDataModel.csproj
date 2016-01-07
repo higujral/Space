@@ -50,29 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess.cs" />
-    <Compile Include="Migrations\201512130241360_SpaceDBCreation.cs" />
-    <Compile Include="Migrations\201512130241360_SpaceDBCreation.Designer.cs">
-      <DependentUpon>201512130241360_SpaceDBCreation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512131218591_AddedTopicIDFKInStory.cs" />
-    <Compile Include="Migrations\201512131218591_AddedTopicIDFKInStory.Designer.cs">
-      <DependentUpon>201512131218591_AddedTopicIDFKInStory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512151129416_fixedRelationships.cs" />
-    <Compile Include="Migrations\201512151129416_fixedRelationships.Designer.cs">
-      <DependentUpon>201512151129416_fixedRelationships.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512151203592_ChangedColumnNameinStory.cs" />
-    <Compile Include="Migrations\201512151203592_ChangedColumnNameinStory.Designer.cs">
-      <DependentUpon>201512151203592_ChangedColumnNameinStory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512161219219_TopicMaxLength.cs" />
-    <Compile Include="Migrations\201512161219219_TopicMaxLength.Designer.cs">
-      <DependentUpon>201512161219219_TopicMaxLength.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512181206091_DatesAdded.cs" />
-    <Compile Include="Migrations\201512181206091_DatesAdded.Designer.cs">
-      <DependentUpon>201512181206091_DatesAdded.cs</DependentUpon>
+    <Compile Include="Migrations\201601061213169_Initial.cs" />
+    <Compile Include="Migrations\201601061213169_Initial.Designer.cs">
+      <DependentUpon>201601061213169_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="SpaceDBContext.cs" />
@@ -91,23 +71,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201512130241360_SpaceDBCreation.resx">
-      <DependentUpon>201512130241360_SpaceDBCreation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512131218591_AddedTopicIDFKInStory.resx">
-      <DependentUpon>201512131218591_AddedTopicIDFKInStory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512151129416_fixedRelationships.resx">
-      <DependentUpon>201512151129416_fixedRelationships.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512151203592_ChangedColumnNameinStory.resx">
-      <DependentUpon>201512151203592_ChangedColumnNameinStory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512161219219_TopicMaxLength.resx">
-      <DependentUpon>201512161219219_TopicMaxLength.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512181206091_DatesAdded.resx">
-      <DependentUpon>201512181206091_DatesAdded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201601061213169_Initial.resx">
+      <DependentUpon>201601061213169_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
