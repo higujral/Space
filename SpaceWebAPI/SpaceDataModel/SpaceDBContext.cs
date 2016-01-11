@@ -8,12 +8,18 @@ using System.Data.Entity;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.Infrastructure.Annotations;
 using SpaceDataModelClasses;
+using System.Diagnostics;
 
 
 namespace SpaceDataModel
 {
     public class SpaceDBContext : DbContext
     {
+        public SpaceDBContext() : base("name=SpaceDatabase") 
+        {
+            Debug.Write(Database.Connection.ConnectionString);
+        }
+
         public DbSet<Story> Stories { get; set; }
         public DbSet<StoryType> StoryTypes { get; set; }
         public DbSet<Topic> Topics { get; set; }

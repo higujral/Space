@@ -17,7 +17,6 @@ C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataMod
 C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModel\obj\Debug\SpaceDataModel.Migrations.ChangedColumnNameinStory.resources
 C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModel\obj\Debug\SpaceDataModel.Migrations.TopicMaxLength.resources
 C:\Users\higujral\Documents\Visual Studio 2015\Projects\SpaceWebAPI\SpaceDataModel\obj\Debug\SpaceDataModel.Migrations.DatesAdded.resources
-C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModel\bin\Debug\SpaceDataModel.dll.config
 C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModel\bin\Debug\SpaceDataModel.dll
 C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModel\bin\Debug\SpaceDataModel.pdb
 C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModel\bin\Debug\EntityFramework.dll
@@ -31,3 +30,4 @@ C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDat
 C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModel\obj\Debug\SpaceDataModel.pdb
 C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModel\obj\Debug\SpaceDataModel.Migrations.Initial.resources
 C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModel\obj\Debug\SpaceDataModel.csproj.GenerateResource.Cache
+C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModel\bin\Debug\SpaceDataModel.dll.config

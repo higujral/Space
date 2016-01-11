@@ -15,6 +15,5 @@ C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDat
 C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModelClasses\bin\Release\EntityFramework.SqlServer.dll
 C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModelClasses\bin\Release\EntityFramework.xml
 C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModelClasses\bin\Release\EntityFramework.SqlServer.xml
-C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModelClasses\obj\Release\SpaceDataModelClasses.csprojResolveAssemblyReference.cache
 C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModelClasses\obj\Release\SpaceDataModelClasses.dll
 C:\Users\Hitesh\Documents\Visual Studio 2015\Projects\Space\SpaceWebAPI\SpaceDataModelClasses\obj\Release\SpaceDataModelClasses.pdb
