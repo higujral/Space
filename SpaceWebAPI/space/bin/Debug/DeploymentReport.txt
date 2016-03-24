@@ -1,0 +1,33 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[__MigrationHistory] (Table)
+       [dbo].[Stories] (Table)
+       [dbo].[Stories].[IX_StoryTypeID] (Index)
+       [dbo].[StoryFeedbacks] (Table)
+       [dbo].[StoryFeedbacks].[IX_StoryID] (Index)
+       [dbo].[StoryTypes] (Table)
+       [dbo].[SubTopics] (Table)
+       [dbo].[SubTopics].[IX_TopicID] (Index)
+       [dbo].[Topics] (Table)
+       [dbo].[Topics].[UniqueIndex] (Index)
+       [dbo].[TopicStories] (Table)
+       [dbo].[TopicStories].[IX_Topic_ID] (Index)
+       [dbo].[TopicStories].[IX_Story_ID] (Index)
+       Default Constraint: unnamed constraint on [dbo].[Stories] (Default Constraint)
+       [dbo].[FK_dbo.Stories_dbo.StoryTypes_StoryTypeID] (Foreign Key)
+       [dbo].[FK_dbo.StoryFeedbacks_dbo.Stories_StoryID] (Foreign Key)
+       [dbo].[FK_dbo.SubTopics_dbo.Topics_TopicID] (Foreign Key)
+       [dbo].[FK_dbo.TopicStories_dbo.Stories_Story_ID] (Foreign Key)
+       [dbo].[FK_dbo.TopicStories_dbo.Topics_Topic_ID] (Foreign Key)
+
+** Supporting actions
